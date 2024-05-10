@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="head">
+      <h1>Financial Reporting Portal Plus</h1>
+      <img src="{{ url_for('static', filename='images/2560px-Deloitte.svg.png') }}" class="logo">
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for cards...">
+    </div>
+    <div class="card-container">
+      <div id="overlay" class="overlay" style="display: none;">
+        <div class="modal">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+             
+                <img class="dashboard" src="{{ url_for('static', filename='images/Exec Summary.png') }}">
+              
+              
+                <h2 class="title">Expanded Card Title</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta nisl nec nisl tincidunt malesuada. Sed sit amet nulla sed orci placerat pulvinar et tristique nibh. Etiam a dictum urna, at efficitur nisi. Suspendisse sit amet dignissim mi, ut semper dui. Fusce turpis orci, molestie quis enim eget, scelerisque viverra tellus. Integer non eros lobortis, aliquam ipsum id, convallis justo. Nam viverra semper metus rutrum cursus. Vivamus convallis tortor magna, ut lobortis dolor convallis pulvinar. Duis vestibulum risus neque. Suspendisse potenti. Nam aliquet feugiat mi sed tincidunt. Pellentesque eros nisi, vehicula vel enim in, efficitur venenatis orci.
+
+                  <br>Donec tincidunt, arcu a rutrum molestie, nibh metus pellentesque lorem, et vehicula eros nulla vel elit. Sed finibus efficitur turpis, a fringilla dui pulvinar nec. Suspendisse aliquam odio sed faucibus placerat. Aliquam sit amet risus nisi. Donec facilisis urna sed arcu iaculis, et rutrum sapien pharetra. Donec mollis arcu quis mauris ornare rhoncus. Etiam est enim, egestas non blandit in, tincidunt non neque. Mauris porta lorem quis mauris molestie, vitae laoreet lacus porttitor. In fringilla urna neque, vel condimentum est aliquet vitae. Fusce accumsan ultrices pulvinar. Praesent laoreet nisi turpis, sed pretium purus fringilla id. Integer convallis nunc vitae sapien pharetra dictum. Phasellus neque diam, sollicitudin ut gravida maximus, semper sed tellus. Mauris vehicula nulla et pellentesque tincidunt. Ut mattis finibus ante et pharetra.
+                  
+                  <br>Donec accumsan ante a felis sollicitudin, imperdiet hendrerit purus molestie. Phasellus tincidunt purus ac est vestibulum volutpat. Ut fringilla metus eu augue interdum, vel pellentesque diam volutpat. Nunc placerat ex quis turpis rutrum, tincidunt molestie sem suscipit. Integer iaculis massa erat, porttitor rhoncus massa posuere sed. Maecenas massa mi, porta nec tellus in, placerat lacinia leo. Proin egestas, neque id vehicula condimentum, urna ligula placerat turpis, sit amet lacinia ex magna vel purus. Quisque lectus massa, lacinia nec pharetra sit amet, interdum suscipit purus. In eros lacus, mattis nec gravida eu, euismod in dolor. Integer congue, velit non tincidunt pulvinar, dolor libero pulvinar mauris, in hendrerit metus erat sed nisl. Proin id purus dapibus, tincidunt sem ac, posuere erat.
+                  
+                  <br>Phasellus ut sapien arcu. Ut consequat, urna at vestibulum semper, leo lorem laoreet lectus, lobortis vehicula eros mi nec dolor. In a congue purus. Nam consequat consequat ex quis congue. Donec id tincidunt sapien, nec tincidunt velit. Nulla varius egestas nibh, vel mattis libero aliquam a. Duis posuere tellus quis augue iaculis consequat. Quisque sollicitudin orci ac ipsum mollis, vitae pretium sem ultrices. Maecenas diam massa, ullamcorper sed turpis ut, hendrerit interdum purus.
+                  
+                  <br>Etiam ligula magna, efficitur quis arcu eu, volutpat condimentum magna. Cras suscipit hendrerit feugiat. Quisque iaculis lobortis tortor, vel blandit tortor vehicula non. Nulla sapien ligula, consectetur a metus id, ultrices faucibus nisi. Vivamus vitae mollis lacus, a euismod purus. Integer id dolor gravida, commodo lacus suscipit, placerat nisi. Proin porta venenatis egestas. Nullam molestie nisl at mauris varius, at sodales velit tincidunt. Nunc sodales turpis dictum eros egestas congue. Donec efficitur rutrum ipsum, ut congue tortor. Aliquam nec malesuada quam. Donec in laoreet magna. Donec interdum volutpat elit, a sagittis erat imperdiet vel. Nam sed risus magna.</p>
+                <a href = "https://public.tableau.com/views/FinanceBusinessDashboard/ExecSummary?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"> Learn More </a>
+            </div>
+        </div>
+    </div>
+    
+
+      <div class="Section">
+        <div class="Section-title">
+          <h2> Section Title </h2>
+        </div>
+        <div class="card-box">
+          <a  target="_blank">
+            <div class="card" id="one">
+              <div class="card-inner">
+                <div class="card-front">
+
+                  <img src="{{ url_for('static', filename='images/bank-statement.png') }}">
+                  <div>
+                    <h3>Firmwide Income Statement</h3>
+
+                    <p>More info here</p>
+                  </div>
+
+                </div>
+                
+
+              </div>
+            </div>
+          </a>
+          <a target="_blank">
+            <div class="card" id="two">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="{{ url_for('static', filename='images/office.png') }}">
+                  <div>
+                    <h3>Firmwide Income Statement</h3>
+                    <p> More info here</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div></a>
+
+      <div class="Section">
+        <div class="Section-title">
+          <h2> Section Title </h2>
+        </div>
+
+        <div class="vertical">
+          <a target="_blank">
+            <div class="cards" id="5">
+              <div class="cards-inner">
+                <div class="cards-front">
+                  <img src="{{ url_for('static', filename='images/office.png') }}">
+                  <h3>Firmwide Income Statement Pivot</h3>
+
+                </div>
+
+              </div>
+            </div>
+          </a>
+
+          <div class="verticals"></div>
+          <a  target="_blank">
+
+            <div class="cards" id="5">
+              <div class="cards-inner">
+                <div class="cards-front">
+                  <img src="{{ url_for('static', filename='images/office.png') }}">
+                  <h3>Firmwide Income Statement Pivot</h3>
+
+
+
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="Section">
+        <div class="Section-title">
+          <h2> Section Title </h2>
+        </div>
+        <div class="card-box">
+          <a target="_blank">
+            <div class="cards" id="5">
+              <div class="cards-inner">
+                <div class="cards-front">
+                  <img src="{{ url_for('static', filename='images/office.png') }}">
+                  <h3>Firmwide Income Statement Pivot</h3>
+
+                </div>
+
+              </div>
+            </div>
+          </a>
+          <div class="vertical">
+            <a target="_blank">
+              <div class="cardsmall" id="10">
+                <div class="cardsmall-inner">
+                  <div class="cardsmall-front">
+                    <!-- Content for the front of the card -->
+                    <img src="{{ url_for('static', filename='images/business-and-finance.png') }}">
+                    <p> More info here</p>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+            <div class="verticals"></div>
+            <a target="_blank">
+              <div class="cardsmall" id="10">
+                <div class="cardsmall-inner">
+                  <div class="cardsmall-front">
+                    <!-- Content for the front of the card -->
+                    <img src="{{ url_for('static', filename='images/business-and-finance.png') }}">
+                    <p> More info here</p>
+                  </div>
+
+                </div>
+              </div>
+          </div></a>
+          <a target="_blank">
+            <div class="cardtwo" id="3">
+              <div class="cardtwo-inner">
+                <div class="cardtwo-front">
+                  <img src="{{ url_for('static', filename='images/bank-statement.png') }}">
+                  <div>
+                    <h3>Business Income Statement</h3>
+                    <p> More info here</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+      </div></a>
+
+      <div class="Section">
+        <div class="Section-title">
+          <h2> Section Title </h2>
+        </div>
+        <div class="card-box">
+          <a target="_blank">
+            <div class="card" id="11">
+              <div class="card-inner">
+                <div class="card-front">
+
+                  <img src="{{ url_for('static', filename='images/bank-statement.png') }}">
+                  <div>
+                    <h3>Firmwide Income Statement</h3>
+
+                    <p>More info here</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </a>
+          <a target="_blank">
+            <div class="cards" id="12">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="{{ url_for('static', filename='images/office.png') }}">
+                  <div>
+                    <h3>Firmwide Income Statement</h3>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </a>
+          <a target="_blank">
+            <div class="cardsmall" id="10">
+              <div class="cardsmall-inner">
+                <div class="cardsmall-front">
+                  <!-- Content for the front of the card -->
+                  <img src="{{ url_for('static', filename='images/business-and-finance.png') }}">
+                  <p> More info here</p>
+                </div>
+
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>For Deloitte. All rights reserved. </p>
+    </footer>
+  </body>
+
+</html>

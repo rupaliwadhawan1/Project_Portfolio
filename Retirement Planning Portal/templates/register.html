@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="head">
+        <h1>Financial Reporting Portal Plus</h1>
+        <img src="{{ url_for('static', filename='images/2560px-Deloitte.svg.png') }}" class="logo">
+    </div>    
+    <div class="main">
+        <div class="images">
+            <img src="{{ url_for('static', filename='images/b_730_afd65d2c-8fc7-4b92-88bf-d5e9e5cf3b3a.png') }}" class="logo">
+        </div>
+        <div class="login">
+            <div class="card-containers">
+                <h2>Register</h2>
+                <input type="text" id="registerUsername" placeholder="Username">
+                <input type="password" id="registerPassword" placeholder="Password">
+                <button onclick="register()">Register</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footers">
+        <p>For Deloitte. All rights reserved. </p>
+      </footer>
+</body>
+</html>
