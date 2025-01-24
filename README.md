@@ -51,7 +51,6 @@ Data-driven patrol optimization using predictive analytics.
 - Visualization: Folium
 - Features: Risk heatmaps, patrol optimization, response time analysis
 
-[Source Code](/TorontoPolicePatrol)
 
 ## Repository Structure
 ```
