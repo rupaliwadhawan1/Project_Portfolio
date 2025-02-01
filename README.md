@@ -62,14 +62,6 @@ Data-driven patrol optimization using predictive analytics.
 └── README.md
 ```
 
-## Contributing
-While this is a personal portfolio, suggestions and feedback are welcome! Please feel free to:
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/suggestion`)
-3. Commit your changes (`git commit -m 'Add some suggestion'`)
-4. Push to the branch (`git push origin feature/suggestion`)
-5. Open a Pull Request
-
 ## Made by Rupali Wadhawan
 
 ## Contact
