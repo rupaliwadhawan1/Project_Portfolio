@@ -91,8 +91,6 @@ This project is shared for transparency and reproducibility. If you find errors 
 ---
 
 ## Author
-
+Rupali Wadhawan
 Senior Data Analyst, PC Financial → EQ Bank (July 2026)  
 [LinkedIn] | [GitHub]
-
-*Published June 2026 as part of a Canadian banking competition analysis series.*
